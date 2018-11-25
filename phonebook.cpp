@@ -14,7 +14,7 @@ public:
   void snum();
   void sname();
   void upnum();
-}
+};
 
 
 
