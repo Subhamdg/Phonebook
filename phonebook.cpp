@@ -105,7 +105,7 @@ void phnbk::upnum()
     f1.seekp(bo);
     f1.read((char*)this,sizeof(*this));
     cout<<"Current Phonenumber is:"<<this->phn;
-    cout<<phone;
+    cin>>phone;
     this->phn=phone;
     f1.write((char*)this,sizeof(*this))<<flush;
   }
