@@ -2,6 +2,7 @@
 #include "fstream"
 #include "cstring"
 #include "iomanip"
+#include "string.h"
 
 using namespace std;
 
@@ -60,7 +61,7 @@ void phnbk::snum()
   f1.open("Phonebook.dat",ios::in|ios::binary);
   f1.seekg(0,ios::beg);
   while(f1.read((char*)this,sizeof(*this))){
-    if(strcmp(this->name,name1)==0){
+    if(this->name==name1){
       ps=i;
       flag=1;
       break;
@@ -91,7 +92,7 @@ void phnbk::upnum()
   f1.open("Phonebook.dat",ios::in|ios::binary);
   f1.seekg(0,ios::beg);
   while(f1.read((char*)this,sizeof(*this))){
-    if(strcmp(this->name,name1)==0){
+    if(this->name==name1){
       ps=i;
       flag=1;
       break;
