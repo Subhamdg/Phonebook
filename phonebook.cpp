@@ -11,8 +11,8 @@ private:
   char name[20];
   long phn;
 public:
-  void snum();
   void sname();
+  void snum();
   void upnum();
 };
 
@@ -25,7 +25,7 @@ void phnbk::sname()
   int ps,i,bo;
   int flag=0;
   ps=-1,i=0;
-  cout<<"Enter Phone number:"
+  cout<<"Enter Phone number:";
   cin>>phone;
   f1.open("Phonebook.dat",ios::in|ios::binary);
   f1.seekg(0,ios::beg);
@@ -55,7 +55,7 @@ void phnbk::snum()
   int ps,i,bo;
   int flag=0;
   ps=-1,i=0;
-  cout<<"Enter Name:"
+  cout<<"Enter Name:";
   cin>>name1;
   f1.open("Phonebook.dat",ios::in|ios::binary);
   f1.seekg(0,ios::beg);
@@ -86,7 +86,7 @@ void phnbk::upnum()
   int ps,i,bo;
   int flag=0;
   ps=-1,i=0;
-  cout<<"Enter Name:"
+  cout<<"Enter Name:";
   cin>>name1;
   f1.open("Phonebook.dat",ios::in|ios::binary);
   f1.seekg(0,ios::beg);
