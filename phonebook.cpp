@@ -31,7 +31,7 @@ void phnbk::sname()
   f1.open("Phonebook.dat",ios::in|ios::binary);
   f1.seekg(0,ios::beg);
   while(f1.read((char*)this,sizeof(*this))){
-    if(this->phn=phone){
+    if(this->phn==phone){
       ps=i;
       flag=1;
       break;
